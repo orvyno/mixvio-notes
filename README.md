@@ -1,6 +1,6 @@
-# MixVio Field Notes
+# MixVio Notes
 
-Hands-on test notes from the [MixVio AI](https://mixvio.ai/?utm_source=github&utm_medium=readme&utm_campaign=field_notes&utm_content=index_link) team: real runs, logged costs, failures included, and the prompts we would reuse.
+Hands-on test notes from the [MixVio AI](https://mixvio.ai/?utm_source=github&utm_medium=readme&utm_campaign=mixvio_notes&utm_content=index_link) team: real runs, logged costs, failures included, and the prompts we would reuse.
 
 Each folder covers one topic and keeps its raw results next to the write-up.
 
@@ -18,6 +18,6 @@ Each folder covers one topic and keeps its raw results next to the write-up.
 
 ## License
 
-Text, data and media in this repository are licensed under [CC BY 4.0](LICENSE). Attribute "MixVio Field Notes" and link to the note you used.
+Text, data and media in this repository are licensed under [CC BY 4.0](LICENSE). Attribute "MixVio Notes" and link to the note you used.
 
 Maintained by [Orvyno LLC](https://orvyno.com), the company behind MixVio AI. Corrections are welcome through issues.
