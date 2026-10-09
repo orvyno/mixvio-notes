@@ -47,7 +47,7 @@ The last part mattered most. "Keep the jar label sharp and unchanged" held in al
 - Kling 3.0 ignored the push-in completely.
 - "Locked-off camera" and "camera stays still" still drifted on Seedance 2.0.
 
-If the frame must not move, plan to stabilize in an editor. Direction words are ambiguous too: asked to turn "to the left over her shoulder", Seedance 2.0 Mini turned to her left and Veo 3.1 Fast turned the other way. Write "screen left" or "screen right".
+If the frame must not move, plan to stabilize in an editor. Direction words can fail too: asked to turn "to the left over her shoulder", Seedance 2.0 Mini turned to her left and Veo 3.1 Fast turned the other way. She faces away from the camera, so her left is also screen left; Veo simply turned the wrong way. Write "screen left" or "screen right" so the side is never in question, and see the [follow-up](#follow-up-does-screen-left-hold-2026-10-09) for what wording alone does not fix.
 
 ![Left: Seedance 2.0 Mini, correct turn. Right: Veo 3.1 Fast, wrong direction and extra petals. AI-generated.](media/head-turn-seedance-2-mini-vs-veo-3-1-fast.gif)
 
@@ -73,6 +73,20 @@ If the texture or an exact detail is the value of the image, do not animate it.
 
 Seedance 2.0 said the scripted line exactly. MiniMax H3 added a garbled phrase before it and slurred "gummy". The picture was fine, and the error only showed up in a transcript. Transcribe or listen with headphones before posting, or mute and caption.
 
+## Follow-up: does "screen left" hold? (2026-10-09)
+
+A reader asked whether "screen left" alone keeps the turn direction across takes on Seedance, or whether you also need to pin a frame. We ran one take per setup on Seedance 2.0 Mini (8 credits each, 24 in total; runs 15–17 in `runs.csv`). One take per setup cannot measure consistency, so read these as single observations.
+
+- **Wording only, back view (run 15):** turned toward screen left as asked, but the photo became anime-style art within the first second. Run 06, the same image and model with "to the left", stayed photographic.
+- **End frame, no direction in the prompt (run 16):** the end frame was the last frame of run 06, with her profile facing screen left. The turn went that way by about 1.5 s and the photographic look held.
+- **Wording only, front-facing portrait (run 17):** she faces the camera, so screen left is her right. The model turned her face toward screen left, reading the direction from the viewer's side.
+
+![Left: "toward screen left" in the prompt, style drift. Right: same start image with an end frame and no direction in the prompt. Seedance 2.0 Mini. AI-generated.](media/head-turn-screen-left-wording-vs-end-frame.gif)
+
+![Run 17: start, middle and last frame. "Toward screen left" turned a front-facing subject to her right. AI-generated.](media/front-portrait-screen-left.png)
+
+What we take from it: "screen left" settles which side you mean, and the model read it from the viewer's side here. It does not stop a take from changing other things. If the end state has to match, pin an end frame. Some practitioners report that end frames can make Seedance motion look forced, so check the middle of the clip, not just the last frame.
+
 ## Checklist before you spend credits
 
 1. One clear subject with room around it; large printed text if text matters.
@@ -94,13 +108,13 @@ Runway's [image to video prompting guide](https://help.runwayml.com/hc/en-us/art
 - **Inputs:** six AI-generated, MixVio-owned showcase images of fictional people and products.
 - **Review:** every clip was reviewed as frame strips and contact sheets; speech was transcribed locally with Whisper.
 - **Failures:** no run failed on the model side, so the session could not test refund behavior for failed generations.
-- **Not tested:** other platforms, longer clips, higher resolutions on every model, or repeat runs to measure variance. Each verdict is one run.
+- **Not tested:** other platforms, longer clips, higher resolutions on every model, or repeat runs to measure variance. Each verdict is one run, including the three follow-up runs on 2026-10-09.
 
 ## Files
 
 | File | Contents |
 | --- | --- |
-| [`runs.csv`](runs.csv) | All 14 runs with prompts, credits, wait times and notes |
+| [`runs.csv`](runs.csv) | All 14 runs plus the 3 follow-up runs, with prompts, credits, wait times and notes |
 | [`prompt-templates.md`](prompt-templates.md) | Reusable templates and the exact prompts tested |
 | [`media/`](media/) | Compressed GIFs and frame comparisons from the runs |
 
