@@ -7,6 +7,7 @@ Each folder covers one topic and keeps its raw results next to the write-up.
 | Topic | Tested | What's inside |
 | --- | --- | --- |
 | [Image to video](image-to-video/) | 2026-10-08 | 14 runs across 5 models, cost per usable clip, prompt templates, failure modes |
+| [Halloween zombie effects](halloween-zombie/) | 2026-10-10 | two effects compared, inputs, credits, thumbnail and content-note rules |
 
 ## How these notes are made
 
